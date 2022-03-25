@@ -1,0 +1,146 @@
+body{
+    margin: 0; 
+}
+
+#site-logo{
+    width: 75px;
+    height: auto;
+
+
+}
+#nav-bar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #1a1b2b;
+    /* align-items: center; Removing this positions the header links to the appropriate space*/
+}
+
+#logo-card{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 0px 30px;
+}
+
+#header-links{
+    color: #FFFFFF;
+}
+
+#content, #about, #order, #contact{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    margin: 0px 15px;
+}
+
+.ramen {
+    width: 300px;
+    height: 200px;
+    box-shadow: 2px black;
+    margin: 5px 15px;
+    float: left;
+}
+
+.content-card{
+    width: 500px;
+    height: 500px;
+}
+
+.content-card-title{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.content-card-text{
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 8px;
+    color: #FFFFFF;
+}
+
+#katsu{ 
+    color: #F8B75D;
+}
+
+#shoyu{
+    color: #E46B3F;
+}
+
+#spicy{
+    color: #C4402A;
+}
+ 
+#content, #order{
+    background-color: #292A44;
+}
+#about, #contact{
+    background-color:  #FFFFFF;
+}
+
+.about-title{
+    color: black;
+}
+.content-card-quote-text{
+    font-size: 30px;
+
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 20px 0px;
+    position: relative;
+    bottom: 0;
+    background-color: #1a1b2b;
+}
+
+#noodle-text{
+    margin-top: 0;
+}
+
+#ramen-b-roll{
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#video-text{
+    color: white;
+    font-size: 8em;
+}
+
+#video-text-wrapper{
+
+}
+
+@media (max-width: 1500px){
+    #content, ul{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+}
