@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0; 
 }
@@ -5,13 +8,12 @@ body{
 #site-logo{
     width: 75px;
     height: auto;
-
-
 }
 #nav-bar{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: #1a1b2b;
     /* align-items: center; Removing this positions the header links to the appropriate space*/
 }
@@ -50,10 +52,12 @@ li{
     height: 200px;
     box-shadow: 2px black;
     margin: 5px 15px;
-    float: left;
 }
 
 .content-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 500px;
     height: 500px;
 }
@@ -127,20 +131,163 @@ li{
     height: 100vh;
 }
 
-#video-text{
+.video-text{
+    text-align: center;
     color: white;
     font-size: 8em;
 }
-
-#video-text-wrapper{
-
+.video-text.smaller{
+    font-size: 4em;
 }
 
-@media (max-width: 1500px){
+@media (min-width: 375px){
+    #nav-bar {
+        position: fixed;
+        width: 100vw;
+    }
     #content, ul{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
     }
 
+    .video-text{
+        text-align: center;
+        color: white;
+        font-size: 3em;
+    }
+    .video-text.smaller{
+        font-size: 2em;
+    }
+
+    li > h3 {
+        margin: 3px;
+    }
+
+    #hamburger-circle{
+        border: none;
+        margin-right: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background-color: #292A44
+        /* background-color: #22277A; */
+    }
+
+    #hamburger-circle:hover{
+        background-color: #22277A;
+        cursor: pointer;
+    }
+
+    #header-links>ul{
+        display: none;
+    }
+
+    .content-card-text{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .content-card{
+        text-align: center;
+        width: 350px;
+    }
+
+    i {
+        font-size: 4em;
+        margin: .3em
+    }
+
+    #badge-collection{
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    .Projects{
+        height: 70%;
+    }
+
+    #commerce{
+        width: 90%;
+    }
+
+    #contact>.content-card>h1, p{
+        color: black;
+    }
+
+    a{
+        color: inherit;
+
+    }
+
+    ul{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    ul>li>a>i.fa-brands{
+        margin: .1em;
+    }
+
+    #contact{
+        height: fit-content;
+    }
+    
+    #contact>.content-card{
+        height: fit-content;
+    }
+
+    #video-text-wrapper{
+        transition: 20s;
+    }
+
+    #circle-x{
+        display: none;
+    }
+
+    #side-bar{
+        background-color: #1a1b2b;
+        text-align: center;
+        position: fixed;
+        width: 150px;
+        color: #FFFFFF;
+        top: 70px;
+        right: -150px;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        transition-duration: .2s;
+    }
+    .nav-link{
+        padding: 20px;
+        margin: 0;
+    }
+
+    .nav-link:hover {
+        background-color: #22277A;
+    }
+
+    .nav-link-wrapper{
+        margin: 0px;
+        padding: 0px;
+    }
+    li > a {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 700px) {
+    #order{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-card-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
