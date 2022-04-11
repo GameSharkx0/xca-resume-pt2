@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    justify-content: center;;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    gap: 15px;
+    width: 80vh;
+    padding: 15px;
+    box-shadow: 0 0 15px 0 grey;
+}
+
+h1, h2, h3, h4, p, ul{
+    margin: 0;
+}
+
+.primary-text--extra-large, .primary-text--large{
+    font-weight: 300;
+}
+
+.primary-text--heading{
+    font-size: large;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: solid 1px black;
+}
+
+#technical-knowledge{
+    display: flex;
+}
+
+.card__item-spacer{
+    margin: 15px;
+}
+
+.card__item-spacer--top{
+    margin-top: 0px;
+}
+
+.card__skills-list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.secondary-text--strong{
+    font-weight: bold;
+}
+
+
+.card__text-line--separate-items{
+    display: flex;
+    justify-content: space-between;
+}
